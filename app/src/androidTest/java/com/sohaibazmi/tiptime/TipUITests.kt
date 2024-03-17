@@ -1,6 +1,5 @@
 package com.sohaibazmi.tiptime
 
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
@@ -8,7 +7,6 @@ import androidx.compose.ui.test.performTextInput
 import com.sohaibazmi.tiptime.ui.theme.TipTimeTheme
 import org.junit.Rule
 import org.junit.Test
-import java.lang.reflect.Modifier
 import java.text.NumberFormat
 
 class TipUITests {
@@ -19,7 +17,7 @@ class TipUITests {
     fun calculate_20_percent_tip() {
         composeTestRule.setContent {
             TipTimeTheme {
-                Surface (){
+                Surface {
                     TipTimeLayout()
                 }
             }
